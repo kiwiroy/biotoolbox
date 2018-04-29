@@ -1,0 +1,9 @@
+language: perl
+
+perl:
+  - 5.26
+
+install:
+  - cpanm -n -q Alien::HTSlib Alien::LibBigWig
+  - cpanm -n -q Bio::DB::HTS Bio::DB::Big
+  - cpanm --with-recommends --installdeps -n -q .
