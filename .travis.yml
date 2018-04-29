@@ -4,6 +4,6 @@ perl:
   - 5.26
 
 install:
-  - cpanm -n -q Alien::HTSlib Alien::LibBigWig
+  - cpanm Alien::HTSlib Alien::LibBigWig || cat ~/.cpanm/build.log
   - cpanm -n -q Bio::DB::HTS Bio::DB::Big
   - cpanm --with-recommends --installdeps -n -q .
